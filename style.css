@@ -1,0 +1,385 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor:hsl(353, 100%, 62%);
+    --hoverBg: hsl(355, 100%, 74%);
+    --footerBg: hsl(240, 10%, 16%);
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+/*the styling below is applied to all main headers in the page*/
+.header-text{
+    font-weight: 700; 
+}
+
+
+/* 
+===========================================
+HEADER HERO BUTTONS STYLING STARTS HERE====
+===========================================
+*/
+.signup-nav, .signup-nav:hover{
+    /* these styles are applied to the general signup button */
+    margin-right: 1em;
+    background: white;
+    width: 130px;
+    border-radius: 25px;
+    background: white;
+    color: var(--primaryColor);
+}
+
+
+.signup-nav:hover{
+    background: var(--hoverBg);
+    color: white;
+}
+
+.start-for-free, .start-for-free:hover{
+    /* styles the start-for-free button in the header hero section */
+    width: 130px;
+    padding-top: .6em;
+}
+
+/* styles the learn-more button in the header hero section */
+.learn-more{
+    width: 130px;
+    padding-top: .6em;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid rgb(241, 237, 237);
+}
+
+.learn-more:hover{
+    background: white;
+    color: var(--primaryColor);
+    border: none;
+}
+
+/* learn-more button styling stops here */
+
+/* 
+===========================================
+HEADER HERO BUTTONS STYLING ENDS HERE====
+===========================================
+*/
+
+.header{
+    color: white;
+    height: auto;
+    background: hsl(353, 100%, 62%);
+    /* 
+        the styling below is used to add a background image to the header container. 
+    */
+    background-image: url(/images/bg-pattern-intro-desktop.svg);
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-bottom-left-radius: 50px;
+}
+
+
+.section1{
+    width: 100%;
+    margin-top: -5em;
+    position: relative;
+}
+
+.for-future{
+    margin-top: 2.5em;
+}
+
+.section-img{
+    transform: translateX(20%); /* moves the image(s) to the right by the specified percentages*/
+}
+
+.section3-img{
+    transform: translateX(-30%); /* moves the image(s) to the right by the specified percentages*/
+}
+
+.section2{
+    background: hsl(237, 23%, 32%);
+    padding-bottom: 0;
+
+     /* 
+        the styling below is used to add a background image to section 2 container. 
+    */
+    background-image: url(/images/bg-pattern-circles.svg);
+    background-size: 700px;
+    background-repeat: no-repeat;
+    background-position: start;
+
+    /*adds border radius to the specified edges of section2 container  */
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.section2-img{
+    width: 100%;
+    transform: scale(1.6); /* used for increasing the image size */
+    padding-left: 3.5em;
+}
+
+.section2-desc{
+    padding-left: 5em;
+    margin: auto;
+    padding-top: 2em;
+    color: white;
+}
+
+
+
+.section3{
+    margin-top: 5em;
+}
+
+.footer{
+    border-top-right-radius: 50px;
+    line-height: 1.8em;
+    background: var(--footerBg);
+    padding: 5em;
+    /* padding-bottom: -5em; */
+}
+
+.footer a{
+    color: rgb(145, 141, 141);
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer h4 a{
+    color: white;
+}
+
+.dropdown-item:hover{
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.no-hover:hover{
+    text-decoration: none;
+}
+
+
+.to-top{
+    position: absolute;
+    left: 8px;
+    bottom: 5%;
+    position: fixed;
+}
+
+.to-top i{
+    color: var(--footerBg)
+}
+
+.mobile-img1{
+    display: none;
+}
+
+.mobile-img2{
+    display: none;
+}
+
+.smaller-devices-nav{
+    display: none;
+}
+
+
+
+/* 
+===================================================
+MEDIA QUERIES START HERE ==========================
+===================================================
+*/
+
+/* 
+==============================================
+Media query for screens greater or equal 992px
+
+this query was used to fix the display errors I encountered with the Login and Sign-up buttons at this particular screen width.
+
+At this screen the flexed buttons were supposed to be directed in row, but the acted like columns. Hence why I created a special @media condition for it.
+*/
+@media screen and (min-width: 992px){
+    .mobile-nav{
+        flex-direction: row;
+    }
+}
+
+
+/* 
+===================================================
+Media query for screens equal to or less than 991px
+*/
+@media screen and (max-width: 991px){
+    .mobile-nav{
+        flex-direction: column; /* changes the behaviour of the ..mobile-nav container to column. */
+    }
+
+    
+    .for-future{
+        margin-bottom: 5em;
+    }
+
+    .section1{
+        flex-direction: column-reverse; /*reverses the order of arrangement of the container's items.*/
+
+        margin-top: -7px;
+        margin-bottom: 9em;
+    }
+
+    .section1-img-holder{
+        margin-bottom: 3em;
+    }
+
+    .header-text{
+        font-size: 2rem;
+    }
+
+    .signup-nav{
+        text-align: center;
+    }
+
+    .section1-desc{
+        text-align: center;
+    }
+
+    .section2{
+        padding-bottom: 5em;
+    }
+
+    .section2 img{
+        transform: scale(1); /*resets the image size to it's original.*/
+        transform: translateY(-20%); /*moves the image -20% to the top.*/
+        padding-left: .1em;
+    }
+
+    .section2-desc{
+        margin-top: -150px; 
+        padding: 0 2em;
+    }
+
+    .section3-img-holder{
+        margin-bottom: 1em;
+        
+    }
+
+    .section3-desc{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .section-img, .section3 img{
+        width: 50%;
+        transform: translateX(-10%);
+    }
+
+    .to-top{
+        display: none;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer-logo{
+        margin-left: -1.3em;
+        margin-bottom: 2em;
+    }
+
+    .ft-link{
+        margin-top: 1em;
+    }
+
+    .section1, .section2, .section3{
+        text-align: center;
+        margin-left: -1.6em;
+    }
+
+    .section3-desc{
+        padding-right: 5em;
+    }
+
+    .mobile-img1, .mobile-img2{
+        display: block; /*makes the mobile screen images visible*/
+    }
+
+    .desktop-img1, .desktop-img2{
+        display: none; /*hides the image at this screen*/
+    }
+
+}
+
+
+
+/* 
+===================================================
+Media query for screens equal to or less than 383px
+*/
+@media screen and (max-width: 383px){
+    .smaller-devices-nav{
+        display: block;
+    }
+
+    .bigger-devices-nav{
+        display: none;
+    }
+
+
+    .section1{
+        margin-top: -20px;
+        margin-bottom: 2em;
+    }
+
+    .section2-desc{
+        margin-top: 5em;
+    }
+
+    .section2-img{
+        margin-bottom: 2em;
+    }
+}
+
+
+/* 
+===================================================
+Media query for screens equal to or less than 767px
+*/
+@media screen and (max-width: 767px){
+    .section2-desc{
+        margin-top: -100px;
+    }
+
+    .section1{
+        margin-bottom: 8.5em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .section2-desc{
+        margin-top: -80px;
+    }
+
+    .section1{
+        margin-bottom: 6em;
+    }
+}
+
+
+/* 
+I OPTED FOR THESE VARIOUS BREAKPOINTS TO ENABLE ME MANUALLY ADDRESS THE MARGIN, PADDING AND OTHER ERRORS I WAS EXPERIENCING AT LOWER/HIGHER BREAKPOINTS WHILE INSPECTING THE SITE'S RESPONSIVENESS.
+*/

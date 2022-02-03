@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e80b16283d.js" crossorigin="anonymous"></script>
+    <title>Team 7 | Blogr Landing Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- 
+      ===================================================
+      HEADER AND NAVS START HERE=========================
+      ===================================================
+     -->
+    <div class="container header px-4 pb-5 pt-3 mb-5" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-none">
+            <div class="container-fluid">
+              <a href="index.html"><img src="/images/logo.svg" alt="" width="60" height="24" class="me-4"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- 
+                ====================================
+                NAVIGATIONS START HERE
+               -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <!-- 
+                      MAIN NAV
+                     -->
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Product
+                    </a>
+                    <!-- 
+                      DROP DOWN NAVS
+                     -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Overview</a></li>
+                      <li><a class="dropdown-item" href="#">Pricing</a></li>
+                      <li><a class="dropdown-item" href="#">Marketplace</a></li>
+                      <li><a class="dropdown-item" href="#">Features</a></li>
+                      <li><a class="dropdown-item" href="#">Integrations</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <!-- 
+                      MAIN NAV
+                     -->
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Company
+                    </a>
+                    <!-- 
+                      DROP DOWN NAVS
+                     -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                      <li><a class="dropdown-item" href="#">Team</a></li>
+                      <li><a class="dropdown-item" href="#">Blog</a></li>
+                      <li><a class="dropdown-item" href="#">Careers</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <!-- 
+                      MAIN NAV
+                     -->
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Connect
+                    </a>
+                    <!-- 
+                      DROP DOWN NAV
+                     -->
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                      <li><a class="dropdown-item" href="#">Newsletter</a></li>
+                      <li><a class="dropdown-item" href="#">LinkedIn</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+
+                <div class="d-flex mobile-nav">
+                  <a class="nav-link text-white no-hover"  href="#">Login</a>
+                  <button class="btn signup-nav">Sign Up</button>
+                </div>
+
+              </div>
+            </div>
+          </nav>
+
+          <!-- 
+                ====================================
+                NAVIGATIONS ENDS HERE
+               -->
+          
+
+               <!-- 
+                ===============================================
+                HERO FOR BIGGER SCREENS START HERE:
+
+                this hero's display property is only set to block for bigger screens using media query. for smaller screens it's display is set to none. 
+               -->
+          <div class="bigger-devices-nav text-center mt-5">
+              <h2 class="fs-1">A modern publishing platform</h2>
+              <p class="text-white-50">Grow your audience and build your online brand</p>
+              <button class="btn btn-outline-none start-for-free signup-nav m-auto me-2">Start for free</button> 
+              <button class="btn btn-outline learn-more m-auto">Learn More</button>
+          </div>
+
+          <!-- 
+                ====================================
+                HERO FOR BIGGER SCREENS ENDS HERE
+               -->
+
+          <!-- 
+                ====================================
+                HERO FOR SMALLER SCREENS START HERE:
+
+                I adopted this approach because initially, at screens below 375px the Start-for-free and Learn-more buttons were overlapping. 
+
+                Using this approach enabled me add #br elements after the Start-for-free button so they can be stacked vertically white a white space between both buttons.
+               -->
+          <div class="smaller-devices-nav text-center mt-5">
+            <h2 class="fs-1">A modern publishing platform</h2>
+            <p class="text-white-50">Grow your audience and build your online brand</p>
+            <button class="btn btn-outline-none start-for-free signup-nav m-auto">Start for free</button> 
+            <br> <br>
+            <button class="btn btn-outline learn-more m-auto">Learn More</button>
+        </div>
+
+        <!-- 
+                ====================================
+                HERO FOR SMALLER SCREENS ENDS HERE
+               -->
+  </div>
+  <!-- 
+      ===================================================
+      HEADER AND NAVS ENDS HERE===== ====================
+      ===================================================
+     -->
+
+    <!-- 
+      =================================
+      SECTION 1 STARTS HERE============
+      =================================
+     -->
+    <div class="container">
+      <h2 class="text-center mb-5 for-future">Designed for the future</h2>
+
+      <div class="row section1 ps-5">
+        <div class="col-lg-6 m-auto section1-desc">
+          <h4 class="header-text">Introducing an extensible editor</h4>
+          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum suscipit ex consequuntur maiores error consectetur doloribus ipsam ullam sit, ad incidunt, qui voluptate dolorum aliquam laborum nisi dignissimos non.</p>
+
+          <h4 class="header-text">Robust content management</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum suscipit ex consequuntur maiores error consectetur doloribus ipsam ullam sit, ad incidunt, qui voluptate dolorum aliquam laborum nisi dignissimos non.</p>
+        </div>
+
+        <div class="col-lg-6 overflow-hidden section1-img-holder">
+          <!-- 
+            =================================
+            SECTION 1 IMG. FOR BIGGER SCREENS
+
+            it's display property is set to block for only screens above 900px and vice-versa.
+           -->
+          <img src="/images/illustration-editor-desktop.svg" alt="" style="width: 120%;" class="section-img desktop-img1">
+
+
+          <!-- 
+            =================================
+            SECTION 1 IMG. FOR SMALLER SCREENS
+
+            it's display property is set to block for only screens below 900px and vice-versa.
+           -->
+          <img src="/images/illustration-editor-mobile.svg" alt="" style="width: 100%;" class="mobile-img1"> 
+        </div>
+      </div>
+
+      <!-- 
+      =================================
+      SECTION 1 ENDS HERE============
+      =================================
+     -->
+
+
+      <!-- 
+        ====================================
+        SECTION 2 STARTS HERE===============
+        ====================================
+       -->
+      <div class="row section2">
+        <div class="col-lg-4">
+          <img src="/images/illustration-phones.svg" alt="" class="section2-img">
+        </div>
+
+        <div class="col-lg-8 section2-desc">
+          <h4 class="header-text">State of the Art Infrastructure</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit nostrum reiciendis quidem sunt temporibus aut quaerat doloribus quod perspiciatis deleniti, tenetur illo. Facere facilis maiores quis tempore molestiae! Amet, et.</p>
+        </div>
+      </div>
+      <!-- 
+        ====================================
+        SECTION 2 ENDS HERE===============
+        ====================================
+       -->
+
+      <!-- 
+        ====================================
+        SECTION 3 STARTS HERE==============
+        ====================================
+       -->
+      <div class="row section3 ps-5">
+        <div class="col-lg-6 overflow-hidden section3-img-holder">
+          <!-- 
+            ==============================================
+            SECTION 3 IMAGES FOR SMALL AND  BIGGER SCREENS
+           -->
+          <img src="/images/illustration-laptop-desktop.svg" alt="" style="width: 120%;" class="section3-img desktop-img2">
+          <img src="/images/illustration-laptop-mobile.svg" alt="" class="mobile-img2" style="width: 100%;">
+        </div>
+
+        <div class="col-lg-6 m-auto pe-5 section3-desc">
+          <h4 class="header-text">Free, Open Simple</h4>
+          <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum suscipit ex consequuntur maiores error consectetur doloribus ipsam ullam sit, ad incidunt, qui voluptate dolorum aliquam laborum nisi dignissimos non.</p>
+
+          <h4 class="header-text">Powerful Tooling</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum suscipit ex consequuntur maiores error consectetur doloribus ipsam ullam sit, ad incidunt, qui voluptate dolorum aliquam laborum nisi dignissimos non.</p>
+        </div>
+
+      </div>
+
+      <!-- 
+        ====================================
+        SECTION 3 ENDS HERE==============
+        ====================================
+       -->
+
+
+      <!-- 
+        ====================================
+        FOOTER STARTS HERE==============
+        ====================================
+       -->
+      <div class="row footer mt-5">
+        <div class="col-lg-3 footer-logo">
+          <a href="index.html"><img src="/images/logo.svg" alt="" width="60" height="24" class="ms-5"></a>
+        </div>
+
+        <div class="col-lg-3 text-secondary">
+          <h4 class="mb-3 text-white ft-link"><a href="#">Product</a></h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 text-secondary">
+          <h4 class="mb-3 text-white ft-link"><a href="">Company</a></h4>
+          <ul class="list-unstyled">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-3 text-secondary">
+          <h4 class="mb-3 text-white ft-link"><a href="">Connect</a></h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 
+        ====================================
+        FOOTER ENDS HERE==============
+        ====================================
+       -->
+
+       
+      <!-- 
+        ======================================
+        BACK TO TOP icon positioned absolutely
+        starts here
+        ======================================
+       -->
+      <div class="float-lg-start to-top shadow-md">
+        <a href="#header">
+          <i class="fas fa-arrow-alt-circle-up fs-1"></i>
+        </a>
+      </div>
+      <!-- 
+        ======================================
+        BACK TO TOP icon positioned absolutely
+        ends here
+        ======================================
+       -->
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
